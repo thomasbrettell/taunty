@@ -1,0 +1,17 @@
+{
+  "name": "taunty",
+  "version": "0.0.1",
+  "bin": "./dist/bin.cjs",
+  "type": "module",
+  "description": "",
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "devDependencies": {
+    "@clack/prompts": "^0.9.1",
+    "@types/node": "^22.10.7",
+    "picocolors": "^1.1.1",
+    "prettier": "^3.4.2",
+    "rollup": "^4.31.0"
+  }
+}
