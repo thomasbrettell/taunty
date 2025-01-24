@@ -1,17 +1,29 @@
 {
   "name": "taunty",
-  "version": "0.0.1",
-  "bin": "./dist/bin.cjs",
+  "version": "0.0.2",
+  "bin": "./dist/bin.js",
   "type": "module",
   "description": "",
   "scripts": {
-    "build": "rollup --config"
+    "build": "rollup -c",
+    "preview": "npm run build && node ./dist/bin.js"
   },
   "devDependencies": {
     "@clack/prompts": "^0.9.1",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@types/ejs": "^3.1.5",
+    "@types/lodash": "^4.17.14",
     "@types/node": "^22.10.7",
     "picocolors": "^1.1.1",
     "prettier": "^3.4.2",
-    "rollup": "^4.31.0"
+    "rollup": "^4.31.0",
+    "rollup-plugin-esbuild": "^6.1.1",
+    "rollup-plugin-preserve-shebangs": "^0.2.0"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "lodash": "^4.17.21"
   }
 }

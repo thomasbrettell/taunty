@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
+  },
+  "devDependencies": {
+    "@tsconfig/svelte": "^5.0.4",
+    "svelte-check": "^4.1.1",
+    "typescript": "~5.7.2"
+  }
+}

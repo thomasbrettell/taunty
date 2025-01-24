@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>taunty project</title>
+  </head>
+  <body>
+    <div data-mount id="app"></div>
+    <script type="module" src="/src/index.<% if (isTS) { %>ts<% } else { %>js<% } %>"></script>
+    <script>
+      window.addEventListener("load", (event) => {
+        window.dispatchEvent(new CustomEvent("odyssey:api"));
+      });
+    </script>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </body>
+</html>
